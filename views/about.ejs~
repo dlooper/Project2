@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>About Twooter</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+<% include header %>
+
+<div id="menu3">
+<br><p style="margin-left:15px;">The purpose of this website is to communicate with a database and emulate, in simplified form, the organization of well-known social networking websites.</p>
+<p style="margin-left:15px;">The company behind this staggering feat of website and database design is none other than Doran Looper, working during the course of his CS 355 class. Doran Looper enjoys long walks on the beach and coding projects for his classes all day long.</p>
+<p style="margin-left:15px;"><b>You can contact us at: doranlooper@fakewebsite.com</b></p>
+
+</div>
+<br>
+<div id="content2">
+</div>
+<br>
+
+<% include footer %>
+
+</body>
+</html>

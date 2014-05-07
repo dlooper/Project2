@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Info</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<% include header %>
+
+
+   <% if(rs.length > 0) { %>
+    <table>
+       
+        <% for (var i=0; rs.length > i; i++) { %>
+        <tr><th>Information For <%= rs[i].Name %></th></tr>
+            <tr>
+             <td><a href="/user/?userid=<%= rs[i].UserID %>"> <%= rs[i].Email %></a></td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+
+<% include footer %>
+</body>
+</html>

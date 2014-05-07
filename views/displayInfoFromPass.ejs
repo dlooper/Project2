@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forgot Password</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<% include header %>
+
+<div id="menu2">
+<br><br><b style="margin-left:15px;">Information Associated With Your Email:</b><br>
+</div>
+
+<div id="content">
+<br>
+    <table id="login">
+        <tr><td>Email: </td>
+            <td><%= email %></td>
+        </tr>
+        <tr><td>Password: </td>
+            <td><%= password %></td>
+        </tr>
+    </table>
+
+<form name="confirm" action="/" method="get">
+<input type="submit" value="Yes, That's My Information">
+</form>
+
+</div>
+
+<% include footer %>
+</body>
+<html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Change Email</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<% include header %>
+
+<div id="menu2"
+<br><br><b style = "margin-left:15px;">Please Enter Name and a New Email:</b><br>
+</div>
+
+<div id="content">
+
+<form method="POST" action="<%= action %>">
+    <table id="login">
+        <tr><td>Name:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="Name" name="Name" /></td>
+        </tr>
+        <tr><td>New Email:</td>
+            <td><input type="test" id="Email" name="Email" /></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+
+</div>
+
+<% include footer %>
+</body>
+</html>

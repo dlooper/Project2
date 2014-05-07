@@ -1,0 +1,14 @@
+Doran Looper
+CS 355
+Haderman
+Project 2
+
+All work done using the dlooper database.
+
+Tables Used in Project:
+User
+Twoot
+Followers table created in anticipation of additional functionality in future 
+
+Query used to create NewsFeed table view(subject to change based on updates):
+CREATE VIEW MessageFeedView AS SELECT u.UserID, Name, Message FROM User u JOIN Twoot t ON u.UserID=t.UserID ORDER BY Timestamp;

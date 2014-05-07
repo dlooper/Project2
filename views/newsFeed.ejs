@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Feed</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<% include header %>
+
+<div id="content">
+   <% if(rs.length > 0) { %>
+    <table>
+        <tr><th>Name</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td><a href="/user/?userid=<%= rs[i].UserID %>"> <%= rs[i].Name %></a></td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+</div>
+<div id="menu4">
+    <% if(rs.length > 0) { %>
+    <table>
+        <tr><th>Message</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td> <%= rs[i].Message %></td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+</div>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<% include footer %>
+</body>
+<html>

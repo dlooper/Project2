@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News Feed</title>
+<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<% include header %>
+<!--
+<div id="menu2">
+<br><br><b style="margin-left:15px;">Information Associated With Your Email:</b><br>
+</div>
+
+<div id="content">
+<br>
+    <table id="login">
+        <tr><td>Name: </td>
+            <td><%= name %></td>
+        </tr>
+        <tr><td>Message: </td>
+            <td><%= message %></td>
+        </tr>
+    </table>
+
+<form name="confirm" action="get/" method="get">
+<input type="submit" value="Yes, That's My Information">
+</form>
+
+</div>
+-->
+
+   <% if(rs.length > 0) { %>
+    <table>
+        <tr><th>Name</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td><a href="/user/?userid=<%= rs[i].UserID %>"> <%= rs[i].Name %></a></td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+
+<% include footer %>
+</body>
+<html>
